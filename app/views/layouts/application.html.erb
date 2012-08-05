@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="jp">
 <head>
   <title>Depot</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -13,6 +13,9 @@
   </div>
   <div id="columns">
     <div id="side">
+      <div id="cart">
+        <%= render @cart %>
+      </div>
       <ul>
         <li><a href="#">ホーム</a></li>
         <li><a href="#">よくある質問</a></li>

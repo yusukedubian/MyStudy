@@ -7,6 +7,7 @@ class StoreController < ApplicationController
 
   def index
     @products = Product.order(:title) #商品名を降順表示
+    @cart = current_cart
     @count = increment_counter
     @show_msg = "You have been here #{@count} times" if session[:counter] > 9
   end
